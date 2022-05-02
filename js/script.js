@@ -19,6 +19,8 @@ $(".subject").hover(
   }
 );
 
+
+
 $(".about-me a").on("click", function () {
   $(".black-wrap").css("display", "flex");
   $(".black-wrap-in").css("display", "flex");
@@ -124,11 +126,17 @@ $(".item03").on("click", function () {
 // item 4
 // item 4
 // item 4
-$(".viewmore").on("click", function () {
-  $(".subject04").css("display", "block");
-  $(".subject04").addClass("scale-in-ver-bottom");
-  return false;
-});
+
+
+//view more 공사중!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// $(".viewmore").on("click", function () {
+//   $(".subject04").css("display", "block");
+//   $(".subject04").addClass("scale-in-ver-bottom");
+//   return false;
+// });
+
+
+
 
 // backtotop
 // backtotop
@@ -212,3 +220,16 @@ $(".l_seven a").on("click", function () {
 });
 
 
+
+
+
+$(".viewmore").hover(
+  function () {
+    $(".view-title").css("display", "none");
+    $(".progress").css("display", "block");
+  },
+  function () {
+    $(".view-title").css("display", "block");
+    $(".progress").css("display", "none");
+  }
+);

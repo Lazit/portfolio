@@ -35,6 +35,18 @@ body {
 .version{
   font-size: 12px;
 }
+.view-more{
+  pointer-events: none;
+}
+.progress{
+  display: none;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Playfair Display",
+  serif;
+}
+
+
 /* ---------------------------------------- */
 /* default end */
 /* ---------------------------------------- */
