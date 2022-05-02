@@ -1,0 +1,134 @@
+@media screen and (min-width: 1200px) {
+  .pc {
+    display: block;
+  }
+  .mo {
+    display: none;
+  }
+
+  #header {
+  }
+  .header-left-icon-box li:last-child {
+    margin-left: 20px;
+  }
+
+  .main-img-container {
+  }
+  .main-img-container img {
+    /* 타블렛이랑 pc 떄 이 값만 조절 */
+  }
+  .main_img p {
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translate(-50%, -0);
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .main_img p:nth-child(2) {
+    font-size: 20px;
+    bottom: 150px;
+  }
+  .main_img p:last-child {
+    padding: 20px 70px;
+    border: 1px solid white;
+    font-size: 15px;
+    font-weight: 500;
+    bottom: 50px;
+    text-align: center;
+  }
+  /*  */
+  .main2 {
+    text-align: center;
+  }
+  .m2-title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .m2-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .m3-titlebox p {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .imgbox01 p {
+    margin-left: 150px;
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .imgbox01 img {
+    max-height: 1200px;
+    /* 타블렛이랑 pc 떄 이 값만 조절 */
+    width: 45%;
+    height: auto;
+    position: relative;
+    margin-left: 150px;
+    margin-bottom: 20px;
+  }
+
+  .imgbox02 {
+    transform: scale(1);
+    text-align: right;
+    box-sizing: border-box;
+    margin-right: 150px;
+    margin-top: -300px;
+  }
+  .imgbox02 img {
+    width: 30%;
+    height: auto;
+    max-height: 1000px;
+  }
+  .imgbox02 p {
+    font-size: 20px;
+    font-weight: 200;
+    text-align: unset;
+  }
+  .imgbox03 img {
+    min-height: 250px;
+    /* 타블렛이랑 pc 떄 이 값만 조절 */
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+    margin-top: 150px;
+  }
+  .imgbox03 p {
+    text-align: right;
+    font-size: 12px;
+    color: #666;
+    /* margin-top: 15px; */
+    font-weight: 400;
+  }
+  .imgbox03 p span {
+    color: #888;
+  }
+
+  .s03-textbox {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    /* background-color: tomato; */
+    /* 타블렛이랑 pc 떄 이 값만 조절 */
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .more-btn {
+    padding: 20px 70px;
+    border: 1px solid black;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+  }
+}

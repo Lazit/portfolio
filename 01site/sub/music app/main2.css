@@ -1,0 +1,90 @@
+.current_play_song_img {
+  margin-top: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.current_play_song_img img {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 8px 0px rgba(165, 119, 75, 0.514);
+  transition: transform 0.2s ease-in-out;
+}
+.current_play_song_img img:hover {
+  transform: scale(1.05);
+}
+.player_time {
+  padding: 10px 15px 0px 15px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.5;
+  font-family: "Thasadith", sans-serif;
+  font-size: 13px;
+}
+.progress_bar {
+  padding: 0px 15px 15px 15px;
+}
+progress {
+  width: 100%;
+  height: 0.2rem;
+  transition: transform 0.05s ease-in-out;
+}
+progress:hover {
+  transform: scaleY(3);
+}
+.player_icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 15px 0px 15px;
+}
+.player_icons button {
+  background-color: transparent;
+}
+.player_icons button:first-child,
+.player_icons button:last-child {
+  opacity: 0.3;
+  font-size: 20px;
+  transition: transform 0.05s ease-in-out;
+}
+.player_icons button:nth-child(2),
+.player_icons button:nth-child(4) {
+  size: 2px;
+  font-size: 20px;
+  transition: transform 0.05s ease-in-out;
+}
+.player_icons button:first-child:hover,
+.player_icons button:last-child:hover {
+  transform: scale(1.2);
+}
+.player_icons button:nth-child(2):hover,
+.player_icons button:nth-child(4):hover {
+  transform: scale(1.2);
+}
+.player_icons button:nth-child(3) {
+  size: 4x;
+  font-size: 80px;
+}
+[data-audio] {
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+[data-audio].on {
+  color: rgb(87, 169, 201);
+}
+[data-audio]:before {
+  content: "\f144";
+}
+[data-audio].on:before {
+  content: "\f28b";
+}
+[data-audio]:hover {
+  transform: scale(1.2);
+}
+[data-audio]:active {
+  transform: scale(1.1);
+}
+.list_singer_title_info {
+  width: 150px;
+}

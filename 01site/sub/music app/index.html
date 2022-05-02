@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>music app</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript">
+      // window.alert("Set your volumn before click the play button!");
+    </script>
+    <link rel="stylesheet" href="main1.css" />
+    <link rel="stylesheet" href="main2.css" />
+  </head>
+  <body>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <div class="main_1">
+      <header>
+        <button type="button" style="cursor: pointer" ;>
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <button type="button" style="cursor: pointer" ;>
+          <i class="fas fa-search"></i>
+        </button>
+      </header>
+      <main>
+        <div class="singer_picture">
+          <img src="profile.jpg" width="100px" height="100px" align="center" />
+        </div>
+        <div class="singer_info">
+          <h1>Back number</h1>
+          <h5>J-pop, Rock, pop rock</h5>
+        </div>
+        <div class="section_btn">
+          <div class="btn_shuffle">
+            <button
+              type="button"
+              style="cursor: pointer; padding: 10px 28px; border-radius: 20px"
+            >
+              Shuffle
+            </button>
+          </div>
+          <div class="btn_love">
+            <button
+              type="button"
+              style="cursor: pointer; padding: 10px 25px; border-radius: 20px"
+            >
+              <i class="fas fa-heart"></i>
+              623,757
+            </button>
+          </div>
+        </div>
+        <div class="song_list">
+          <button
+            class="list"
+            type="button"
+            style="cursor: pointer; padding: 30px 150px"
+          >
+            <img src="list1.jpg" alt="" />
+            <div class="list_singer_title_info">
+              <h3 class="list_singer">Back number</h3>
+            </div>
+            <div class="list_singer_title_info">
+              <h2 class="list_song_title">Boku no namae wo</h2>
+            </div>
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+          <button
+            class="list"
+            type="button"
+            style="cursor: pointer; padding: 30px 150px"
+          >
+            <img src="list2.jpg" alt="" />
+            <div class="list_singer_title_info">
+              <h3 class="list_singer">Back number</h3>
+            </div>
+            <div class="list_singer_title_info">
+              <h2 class="list_song_title">Happy end</h2>
+            </div>
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+          <button
+            class="list"
+            type="button"
+            style="cursor: pointer; padding: 30px 150px"
+          >
+            <img src="list3.jpg" alt="" />
+            <div class="list_singer_title_info">
+              <h3 class="list_singer">Back number</h3>
+            </div>
+            <div class="list_singer_title_info">
+              <h2 class="list_song_title">Tegami</h2>
+            </div>
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+          <button
+            class="list"
+            type="button"
+            style="cursor: pointer; padding: 30px 150px"
+          >
+            <img src="list4.jpg" alt="" />
+            <div class="list_singer_title_info">
+              <h3 class="list_singer">Back number</h3>
+            </div>
+            <div class="list_singer_title_info">
+              <h2 class="list_song_title">Heroine</h2>
+            </div>
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+        </div>
+        <div class="player">
+          <div class="player_current">
+            <p class="player_singer">Back number</p>
+            <p class="player_song_title">Happy end</p>
+          </div>
+          <div class="player_i">
+            <button type="button" style="cursor: pointer">
+              <i class="fas fa-step-backward"></i>
+            </button>
+            <button type="button" style="cursor: pointer">
+              <i class="fas fa-pause"></i>
+            </button>
+            <button type="button" style="cursor: pointer">
+              <i class="fas fa-step-forward"></i>
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="main_2">
+      <header>
+        <button type="button" style="cursor: pointer" ;>
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <button type="button" style="cursor: pointer" ;>
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+      </header>
+      <main>
+        <div class="current_play_song_img">
+          <img src="list2.jpg" alt="" />
+        </div>
+        <div class="singer_info">
+          <h1>Happy end</h1>
+          <h5>Back number</h5>
+        </div>
+        <div class="player_time">
+          <span>0:00</span>
+          <span>5:14</span>
+        </div>
+        <div class="progress_bar">
+          <progress value="30" max="100" style="cursor: pointer"></progress>
+        </div>
+        <div class="player_icons">
+          <button type="button" style="cursor: pointer">
+            <i class="fas fa-sync-alt"></i>
+          </button>
+          <button type="button" style="cursor: pointer">
+            <i class="fas fa-step-backward"></i>
+          </button>
+          <button type="button" style="cursor: pointer">
+            <!--<i
+              class="fas fa-play-circle"
+              onclick="audio.play();"
+              value="play"
+            ></i>-->
+            <a
+              class="fa"
+              data-audio="https://docs.google.com/uc?export=open&id=1ozWZhzAq4NRUW1P0nmRnRnmmWUzaFn8U"
+            ></a>
+          </button>
+          <button type="button" style="cursor: pointer">
+            <i class="fas fa-step-forward"></i>
+          </button>
+          <button type="button" style="cursor: pointer">
+            <i class="fas fa-random"></i>
+          </button>
+        </div>
+      </main>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/c36b379e04.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--<script>
+      function playAudio(url) {
+        new Audio(url).play();
+        audioFile.pause();
+        audioFile.currentTime = 0;
+      }
+    </script>-->
+    <!--<script>
+        var audio = new Audio('song1.mp3');
+    </script>-->
+    <script>
+      (function () {
+        var AUD = document.createElement('audio'),
+          BTN = document.querySelectorAll('[data-audio]'),
+          tot = BTN.length;
+
+        function playPause() {
+          var src = this.dataset.audio;
+          if (AUD.src != src) AUD.src = src;
+          AUD[AUD.paused ? 'play' : 'pause']();
+          for (var j = 0; j < tot; j++)
+            if (BTN[j] != this) BTN[j].classList.remove('on');
+          this.classList.toggle('on');
+          AUD.addEventListener('ended', playPause);
+        }
+
+        for (var i = 0; i < tot; i++)
+          BTN[i].addEventListener('click', playPause);
+      })();
+    </script>
+  </body>
+</html>

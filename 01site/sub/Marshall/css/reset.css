@@ -1,0 +1,27 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'helv', Helvetica;
+  font-size: 14px;
+  line-height: 20px;
+}
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+img {
+  vertical-align: top;
+  border: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}

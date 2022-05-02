@@ -1,0 +1,264 @@
+@import "Happy_End.mp3";
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Thasadith:wght@700&display=swap");
+@font-face {
+  font-family: "Swiss 721";
+  src: url("http://db.onlinewebfonts.com/t/d890d634174186faf6358e45fdf5f286.woff2")
+      format("woff2"),
+    url("http://db.onlinewebfonts.com/t/d890d634174186faf6358e45fdf5f286.woff")
+      format("woff"),
+    url("http://db.onlinewebfonts.com/t/d890d634174186faf6358e45fdf5f286.ttf")
+      format("truetype");
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: rgb(50, 50, 50);
+  transition: transform 0.05s ease-in-out;
+}
+h1:hover {
+  transform: scale(1.05);
+}
+h5 {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  opacity: 0.6;
+  letter-spacing: 0.3px;
+  transition: transform 0.05s ease-in-out;
+}
+h5:hover {
+  transform: scale(1.05);
+}
+h2 {
+  font-family: "Nunito", sans-serif;
+  color: rgb(50, 50, 50);
+  height: 23px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+h3 {
+  font-family: "Rubik", sans-serif;
+  opacity: 0.6;
+  height: 23px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  letter-spacing: 0.3px;
+}
+p {
+  letter-spacing: 0.3px;
+}
+.main_1,
+.main_2 {
+  width: 350px;
+  height: 700px;
+  margin: 40px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+.main_1 main,
+.main_2 main {
+  padding: 15px;
+}
+header {
+  margin-top: 20px;
+  padding: 15px 30px 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header button {
+  background-color: transparent;
+  font-size: 20px;
+}
+header button i {
+  color: rgb(50, 50, 50);
+  transition: transform 0.05s ease-in-out;
+}
+header button i:hover {
+  transform: scale(1.1);
+}
+.section_btn {
+  display: flex;
+  justify-content: center;
+}
+.btn_shuffle button,
+.btn_love button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 0px 15px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Thasadith", sans-serif;
+  font-size: 14px;
+}
+button {
+  border: none;
+  outline: none;
+}
+button:focus {
+  border: none;
+  outline: none;
+}
+.song_list button {
+  background-color: white;
+  transition: transform 0.1s ease-in-out;
+}
+.song_list button:hover {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
+}
+.song_list button:active {
+  background-color: white;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.song_list button:focus {
+  background-color: rgb(94, 209, 255, 0.3);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.btn_shuffle button {
+  color: white;
+  background-color: rgb(50, 50, 50);
+}
+.btn_love button {
+  color: grey;
+  background-color: white;
+}
+.btn_shuffle button:hover,
+.btn_love button:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
+}
+.btn_love button:active {
+  background-color: lightgrey;
+  color: white;
+}
+.btn_shuffle button:active {
+  background-color: rgb(20, 20, 20);
+}
+.btn_love i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.singer_picture {
+  display: flex;
+  justify-content: center;
+}
+.singer_picture img {
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px rgb(39, 111, 139, 0.8);
+  transition: transform 0.2s ease-in-out;
+}
+.singer_picture img:hover {
+  transform: scale(1.2);
+}
+.singer_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+.song_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  width: 315px;
+  height: 60px;
+  margin: 2px 0px;
+  flex-direction: column;
+}
+.list:first-child {
+  margin-top: 30px;
+}
+.list:last-child {
+  margin-bottom: 10px;
+}
+.list img {
+  position: absolute;
+  left: 15px;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+}
+.list_singer,
+.list_song_title {
+  display: flex;
+  left: 0px;
+  width: 150px;
+}
+.list i {
+  position: absolute;
+  right: 10px;
+  opacity: 0.3;
+}
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgb(50, 50, 50);
+  width: 320px;
+  height: 70px;
+  border-radius: 100px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.player_current {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 25px;
+  width: 150px;
+}
+.player_singer {
+  font-family: "Rubik", sans-serif;
+  color: rgb(156, 156, 156);
+  margin-bottom: 5px;
+}
+.player_song_title {
+  font-family: "Nunito", sans-serif;
+  color: white;
+}
+.player_i {
+  margin-left: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 15px;
+  color: white;
+}
+.player_i button {
+  background-color: transparent;
+  margin: 10px;
+  font-size: 18px;
+}
+.player_i button i {
+  color: white;
+  transition: transform 0.02s ease-in-out;
+}
+.player_i button:nth-child(2) {
+  font-size: 25px;
+  transition: transform 0.05s ease-in-out;
+}
+.player_i button i:hover {
+  transform: scale(1.2);
+}

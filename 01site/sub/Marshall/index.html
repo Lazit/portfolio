@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marshall</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;500;900&family=Oswald:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+    <!--1115  -->
+    <script type="text/javascript">
+      document.oncontextmenu = function () {
+        return false;
+      };
+    </script>
+    <!-- 1115. -->
+  </head>
+
+  <body onselectstart="return false" ondragstart="return false">
+    <div id="mask" style="background-color: black; white-space: nowrap">
+      <p style="color: red; font-size: 30px">Alert!</p>
+      <p>
+        이 웹사이트는
+        <span style="border-bottom: 1px solid white">1920x1080</span> 해상도에서
+        동작하도록 설계되었습니다.<br />
+        설계 기준 이하 또는 이상의 해상도에서는 컨텐츠가 올바르게 표시되지 않을
+        수 있습니다.<br />
+      </p>
+      <button
+        id="mask_ok"
+        style="border: none; width: 100px; height: 40px; border-radius: 10px"
+      >
+        확인
+      </button>
+    </div>
+    <div id="wrap">
+      <header id="header">
+        <div class="header_in">
+          <div class="logo_container">
+            <div class="logo"><a href=""></a></div>
+          </div>
+          <ul class="gnb">
+            <li class="tag1"><a href="#">HEADPHONES</a></li>
+            <li class="tag2"><a href="#">SPEAKERS</a></li>
+            <li><a href="#">ACCESSORIES</a></li>
+            <li class="tag3"><a href="#">BACKSTAGE</a></li>
+          </ul>
+          <ul class="util">
+            <li>
+              <label class="i_search" for="searchbar"></label>
+              <input id="searchbar" type="checkbox" />
+              <div class="search_control">
+                <div class="search_menu">
+                  <input type="search" placeholder="search..." />
+                </div>
+              </div>
+            </li>
+            <li>
+              <label class="i_help" for="help"></label>
+              <input id="help" type="checkbox" />
+              <div class="help_control">
+                <div class="help_menu">
+                  <ul class="help_menu_1 help_menu_section">
+                    <li class="help_menu_title">
+                      <a href=""><p>CUSTOMER SERVICE</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>CONTACT US</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>BUSINESS COSTOMERS</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>AUTHORISED RETAILERS</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>DELIVERY TIMES</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>EXCHANGE AND RETURN</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>USER MANUALS</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>HELP SENTER</p></a>
+                    </li>
+                  </ul>
+                  <ul class="help_menu_2 help_menu_section">
+                    <li class="help_menu_title">
+                      <a href=""><p>POLICIES</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>SECURITY</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>TERMS OF USE</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>TERMS OF PURCHASE</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>PAYMENT METHODS</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>DECLARATION OF CONFORMITY</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>GLOBAL WARRANTY</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>PRIVACY POLICY</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>GDPR</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>COOKIES</p></a>
+                    </li>
+                  </ul>
+                  <ul class="help_menu_3 help_menu_section">
+                    <li class="help_menu_title">
+                      <a href=""><p>COMPANY</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>ABOUT US</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>PRESS ROOM</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>MODERN SLAVERY</p></a>
+                    </li>
+                    <li class="help_menu_text">
+                      <a href=""><p>SOCIAL IMPACT</p></a>
+                    </li>
+                  </ul>
+                  <ul class="sns_icons">
+                    <li>
+                      <a href=""
+                        ><p><img src="src/images/youtube.png" alt="" /></p
+                      ></a>
+                    </li>
+                    <li>
+                      <a href=""
+                        ><p><img src="src/images/instagram.png" alt="" /></p
+                      ></a>
+                    </li>
+                    <li>
+                      <a href=""
+                        ><p><img src="src/images/facebook.png" alt="" /></p
+                      ></a>
+                    </li>
+                    <li>
+                      <a href=""
+                        ><p><img src="src/images/twitter.png" alt="" /></p
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p class="i_cart">
+                <a href=""></a>
+              </p>
+            </li>
+            <li>
+              <label class="i_user" for="user"> </label>
+              <input id="user" type="checkbox" />
+              <div class="user_control">
+                <div class="user_menu">
+                  <form action="">
+                    <ul class="log_in_menu">
+                      <li class="id_text">ID</li>
+                      <li><input type="text" placeholder="id" /></li>
+                      <li class="pw_text">PASSWORD</li>
+                      <li><input type="password" placeholder="password" /></li>
+                    </ul>
+                    <div class="log_in_button">
+                      <input type="submit" value="LOG IN" />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </li>
+            <li>
+              <label class="menu" for="menu">SOUTHKOREA/KR</label>
+              <input id="menu" type="checkbox" />
+              <div class="region_control">
+                <div class="region_menu">
+                  <h2>SELECT COUNTRY AND LANGUAGE</h2>
+                  <p>
+                    COUNTRY, SHIPPING DESTINATIONS AND FREIGHT COSTS ARE
+                    DETERMINED<br />BY YOUR COUNTRY SELECTION.
+                  </p>
+                  <div class="region_input">
+                    <select name="" id="">
+                      <option value="">SOUTHKOREA</option>
+                      <option value="">UNITED STATES</option>
+                      <option value="">JAPAN</option>
+                    </select>
+                    <select name="" id="">
+                      <option value="">KR</option>
+                      <option value="">EN</option>
+                      <option value="">JP</option>
+                    </select>
+                    <div class="confirm_button">
+                      <a href="">
+                        <p>CONFIRM</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div id="fullpage">
+        <div class="section s1">
+          <div class="center_box">
+            <video
+              class="main_video"
+              data-autoplay
+              src="src/video/main_video.mp4"
+              muted
+              loop
+            ></video>
+            <!-- data-keepplaying -->
+          </div>
+        </div>
+
+        <div class="section s2">
+          <div class="s2_in">
+            <div class="slide s2_sl1">
+              <div class="img_box">
+                <img
+                  src="src/images/hero-speakers-all-desktop-edited.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="s2_sl1_text">
+                <p><em>“Music is at the heart of everything we do.” </em></p>
+                <p><em>-Terry Marshall</em></p>
+                <p>
+                  Marshall are defined as innovators and<br />we will continue
+                  to push the boundaries of<br />possibility to help inspire you
+                  to find your sound.
+                </p>
+              </div>
+              <div class="go_button">
+                <a href="https://marshall.com/about/marshall-history">
+                  <p>BRAND STORY</p>
+                </a>
+              </div>
+            </div>
+            <div class="slide s2_sl2">
+              <div class="img_box">
+                <img src="src/images/singer-stage-edited.jpg" alt="" />
+              </div>
+              <div class="s2_sl2_text">
+                <p><em>"STAGE"</em></p>
+                <p>
+                  We’re giving you an exclusive look of what life is like on the
+                  road with some of<br />our favourite artists.
+                </p>
+              </div>
+              <div class="go_button s2_btn">
+                <a
+                  href="https://www.marshallheadphones.com/kr/en/marshall-backstage.html"
+                >
+                  <p>LATEST STORIES</p>
+                </a>
+              </div>
+            </div>
+            <div class="slide s2_sl3">
+              <div class="img_box">
+                <img src="src/images/motif-anc-pdp-hero-edited.png" alt="" />
+              </div>
+              <div class="s2_sl3_text">
+                <p>ALL HEADPHONES</p>
+                <p>
+                  From in-ears to over-ears and everything in-between, there’s a
+                  Marshall headphone that’s<br />perfect for you.
+                </p>
+              </div>
+              <div class="go_button tab1">
+                <a href="">
+                  <p>DISCOVER THE LINE-UP</p>
+                </a>
+              </div>
+            </div>
+            <div class="slide s2_sl4">
+              <div class="img_box">
+                <img
+                  src="src/images/marshall-stanmore-ii-bluetooth-slideshow-09-Desktop@1,41x-edited.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="s2_sl4_text">
+                <p>ALL SPEAKERS</p>
+                <p>
+                  Winners aren’t made overnight. Over 50 years of sound and
+                  design expertise has been<br />distilled into each and every
+                  Marshall speaker, bringing that big stage presence home for<br />your
+                  listening enjoyment.
+                </p>
+              </div>
+              <div class="go_button tab2">
+                <a href="">
+                  <p>DISCOVER THE LINE-UP</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section s3">
+          <div class="s3_in">
+            <div class="slide s3_sl1">
+              <div class="img_box">
+                <img src="src/images/background3.jpg" alt="" />
+              </div>
+              <p class="item_list_title">WIRELESS EARPHONES</p>
+              <p class="item_list_memo">
+                Experience amplified audio with absolute freedom from wires
+              </p>
+              <div class="item_wrap">
+                <ul class="item_list earphones">
+                  <li class="item_1 item">
+                    <a href="">
+                      <p><img src="src/images/pl-ANC.png" alt="" /></p>
+                      <p class="item_title">MOTIF A.N.C.</p>
+                      <p class="item_price"><span>$</span>219.00</p>
+                    </a>
+                  </li>
+                  <li class="item_2 item">
+                    <a href="">
+                      <p><img src="src/images/pl-minor3.png" alt="" /></p>
+                      <p class="item_title">MINOR III</p>
+                      <p class="item_price"><span>$</span>139.00</p>
+                    </a>
+                  </li>
+                  <li class="item_3 item">
+                    <a href="">
+                      <p>
+                        <img
+                          src="src/images/plp-marshall-mode-ii-black.png"
+                          alt=""
+                        />
+                      </p>
+                      <p class="item_title">MODE II</p>
+                      <p class="item_price"><span>$</span>199.00</p>
+                    </a>
+                  </li>
+                  <li class="item_4 item">
+                    <a href="">
+                      <p>
+                        <img
+                          src="src/images/cart-marshall-major-iv-black.png"
+                          alt=""
+                        />
+                      </p>
+                      <p class="item_title">MAJOR IV</p>
+                      <p class="item_price"><span>$</span>179.00</p>
+                    </a>
+                  </li>
+                  <li class="item_5 item">
+                    <a href="">
+                      <p>
+                        <img
+                          src="src/images/mh-monitor-II-ANC-medium.png"
+                          alt=""
+                        />
+                      </p>
+                      <p class="item_title">MONITOR II A.N.C.</p>
+                      <p class="item_price"><span>$</span>359.00</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide s3_sl2">
+              <div class="img_box">
+                <img src="src/images/background3.jpg" alt="" />
+              </div>
+              <p class="item_list_title">WIRED EARPHONES</p>
+              <p class="item_list_memo">Flip the switch, Change your sound</p>
+              <div class="item_wrap">
+                <ul class="item_list earphones">
+                  <li class="item_1 item">
+                    <a href="">
+                      <p>
+                        <img
+                          src="src/images/pl-marshall-headphones-minor-ii-black-1700x1700.png"
+                          alt=""
+                        />
+                      </p>
+                      <p class="item_title">MINOR II</p>
+                      <p class="item_price"><span>$</span>159.00</p>
+                    </a>
+                  </li>
+                  <li class="item_2 item">
+                    <a href="">
+                      <p>
+                        <img
+                          src="src/images/pl-marshall-headphones-mode-eq-1700x1700.png"
+                          alt=""
+                        />
+                      </p>
+                      <p class="item_title">MODE EQ</p>
+                      <p class="item_price"><span>$</span>99.00</p>
+                    </a>
+                  </li>
+                  <li class="item_3 item">
+                    <a href="">
+                      <p>
+                        <img
+                          src="src/images/pl-marshall-headphones-mode-1700x1700.png"
+                          alt=""
+                        />
+                      </p>
+                      <p class="item_title">MODE II</p>
+                      <p class="item_price"><span>$</span>75.00</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section s4">
+          <div class="slide s4_sl1" data-anchor="slide2">
+            <div class="img_box">
+              <img src="src/images/background3.jpg" alt="" />
+            </div>
+            <p class="item_list_title">SPEAKERS</p>
+            <p class="item_list_memo">Build your own wall of sound</p>
+            <div class="item_wrap">
+              <ul class="item_list speakers">
+                <li class="item_1 item">
+                  <a href="">
+                    <p>
+                      <img
+                        src="src/images/pl-marshall-speakers-acton-ii-black-1700x1700.png"
+                        alt=""
+                      />
+                    </p>
+                    <p class="item_title">ACTON II BLUETOOTH</p>
+                    <p class="item_price"><span>$</span>299.00</p>
+                  </a>
+                </li>
+                <li class="item_2 item">
+                  <a href="">
+                    <p>
+                      <img
+                        src="src/images/pl-marshall-speakers-stanmore-ii-black-1700x1700.png"
+                        alt=""
+                      />
+                    </p>
+                    <p class="item_title">STANMORE II BLUETOOTH</p>
+                    <p class="item_price"><span>$</span>419.00</p>
+                  </a>
+                </li>
+                <li class="item_3 item">
+                  <a href="">
+                    <p>
+                      <img
+                        src="src/images/pl-marshall-speakers-woburn-ii-black-1700x1700.png"
+                        alt=""
+                      />
+                    </p>
+                    <p class="item_title">WOBURN II BLUETOOTH</p>
+                    <p class="item_price"><span>$</span>599.00</p>
+                  </a>
+                </li>
+                <li class="item_4 item">
+                  <a href="">
+                    <p>
+                      <img
+                        src="src/images/Thumbnail_Emberton_medium.png"
+                        alt=""
+                      />
+                    </p>
+                    <p class="item_title">EMBERTON</p>
+                    <p class="item_price"><span>$</span>189.00</p>
+                  </a>
+                </li>
+                <li class="item_5 item">
+                  <a href="">
+                    <p>
+                      <img
+                        src="src/images/pl-marshall-speakers-stockwell-ii-black.png"
+                        alt=""
+                      />
+                    </p>
+                    <p class="item_title">STOCKWELL II</p>
+                    <p class="item_price"><span>$</span>249.00</p>
+                  </a>
+                </li>
+                <li class="item_6 item">
+                  <a href="">
+                    <p>
+                      <img
+                        src="src/images/pl-marshall-speakers-kilburn-ii-black-1700x1700.png"
+                        alt=""
+                      />
+                    </p>
+                    <p class="item_title">KILBURN II</p>
+                    <p class="item_price"><span>$</span>299.00</p>
+                  </a>
+                </li>
+                <li class="item_7 item">
+                  <a href="">
+                    <p>
+                      <img
+                        src="src/images/pl-marshall-speakers-tufton-black.png"
+                        alt=""
+                      />
+                    </p>
+                    <p class="item_title">TUFTON</p>
+                    <p class="item_price"><span>$</span>489.00</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="section s5">
+          <div class="slide s5_sl1">
+            <div class="center_box">
+              <video
+                class="main_video"
+                data-autoplay
+                src="src/video/5f95f456-4dbf-44da-b937-394de9d06348.mp4"
+                muted
+                loop
+              ></video>
+              <!-- data-keepplaying -->
+            </div>
+            <div class="s5_text">
+              <p>
+                <em
+                  >“Every time I plug it in I get that same feeling,<br />that
+                  same desire to just rock.”
+                </em>
+              </p>
+              <p><em>-Lzzy Hale, Halestorm</em></p>
+              <p>
+                Marshall is more than just an amp manufacturing brand. Marshall
+                is a music brand.<br />Jim Marshall's passion for music was the
+                driver for all that he achieved.<br />This same motivation is at
+                the heart of Marshall Records.<br />The label supports musicians
+                to create, record, produce and promote their music.
+              </p>
+            </div>
+            <div class="go_button">
+              <a href="https://marshall.com/live-for-music/social-impact">
+                <p>SEE MORE</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="section s6">
+          <div class="slide s6_sl1">
+            <div class="s6_in">
+              <div class="img_box">
+                <img src="src/images/b2b-alt1-desktop-edited.jpg" alt="" />
+              </div>
+              <div class="s6_text">
+                <p>SIGN UP FOR OUR NEWSLETTER</p>
+                <p>Get 10 % off on your first order.</p>
+              </div>
+              <div class="input_box">
+                <input
+                  type="email"
+                  placeholder="Your email address goes here"
+                />
+              </div>
+              <div class="go_button">
+                <a href="">
+                  <p>SUBSCRIBE</p>
+                </a>
+              </div>
+              <div class="footer_logo">
+                <img src="src/images/logo.png" alt="" />
+              </div>
+              <div class="footer_info">
+                ©2021 ZOUND INDUSTRIES. ALL RIGHTS RESERVED. ORG. NR 5567574610
+              </div>
+              <div class="go_to_top">
+                <a href=""
+                  ><p><img src="src/images/up-arrow (1).png" alt="" /></p
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $('#fullpage').fullpage({
+          //option
+          licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+          autoScrolling: true,
+
+          // paddingTop: '70px'
+          slidesNavigation: true,
+          slidesNavPosition: 'bottom',
+          controlArrows: true,
+          fitToSection: true,
+
+          //callback
+        });
+        $('.tab1').on('click', function (e) {
+          e.preventDefault();
+          fullpage_api.moveTo(3);
+        });
+        $('.tab2').on('click', function (e) {
+          e.preventDefault();
+          fullpage_api.moveTo(4);
+        });
+        $('.go_to_top').on('click', function (e) {
+          e.preventDefault();
+          fullpage_api.moveTo(1);
+        });
+        $('.tag1').on('click', function (e) {
+          e.preventDefault();
+          fullpage_api.moveTo(3);
+        });
+        $('.tag2').on('click', function (e) {
+          e.preventDefault();
+          fullpage_api.moveTo(4);
+        });
+        $('.tag3').on('click', function (e) {
+          e.preventDefault();
+          fullpage_api.moveTo(5);
+        });
+        $('.logo').on('click', function (e) {
+          e.preventDefault();
+          fullpage_api.moveTo(1);
+        });
+        $(document).on('click', '#help', function () {
+          if ($('#help').is(':checked')) {
+            $('#searchbar').prop('checked', false);
+            $('#menu').prop('checked', false);
+            $('#user').prop('checked', false);
+          }
+        });
+        $(document).on('click', '#menu', function () {
+          if ($('#menu').is(':checked')) {
+            $('#help').prop('checked', false);
+            $('#user').prop('checked', false);
+            $('#searchbar').prop('checked', false);
+          }
+        });
+        $(document).on('click', '#searchbar', function () {
+          if ($('#searchbar').is(':checked')) {
+            $('#help').prop('checked', false);
+            $('#user').prop('checked', false);
+            $('#menu').prop('checked', false);
+          }
+        });
+        $(document).on('click', '#user', function () {
+          if ($('#user').is(':checked')) {
+            $('#help').prop('checked', false);
+            $('#searchbar').prop('checked', false);
+            $('#menu').prop('checked', false);
+          }
+        });
+        $(document).on('click', '#mask_ok', function () {
+          $('#mask').hide();
+          $('#wrap').css('display', 'block');
+        });
+        // $(document).on("click", ".main_video", function () {
+        //   $("#help").prop("checked", false);
+        //   $("#searchbar").prop("checked", false);
+        //   $("#menu").prop("checked", false);
+        //   $("#user").prop("checked", false);
+        // });
+        // $(".help_control").mouseleave(function () {
+        //   $("#header").css("background", "black");
+        // });
+      });
+    </script>
+  </body>
+</html>
+
+<!-- https://github.com/Mobius1/Pageable#readme 자바스크립트 only fullpage -->
+<!-- https://wsss.tistory.com/1265    스크롤 이벤트 ***********-->
+<!-- https://dkanxmstmdgml.tistory.com/111  스크롤 이벤트2********-->
+
+<!-- https://comizle.tistory.com/35  css 체크박스 토글 이벤트 -->
+<!-- https://appsnuri.tistory.com/501 체크박스 js 이벤트 -->
+<!-- 체크박스 토글 시 인풋 밑에 토글메뉴가 와야 정상작동.. 다른 위치에 있을 시 체크박스 
+토글해도 display block 안먹힘. 이유 알아보기  -->
+
+<!-- https://animista.net/ css 애니메이션 효과 사이트 -->
+<!-- https://matthewlein.com/tools/ceaser  애니메이션 트렌지션 이펙트 -->
+<!-- https://easings.net/ko# 에니메이션 트렌지션 이펙트 2 *********** -->
+
+<!-- https://coding-factory.tistory.com/180 자동 이동 텍스트 MARQUEE -->
+
+<!-- https://heinafantasy.com/120 마우스 드래그/클릭/복사 방지 -->
+
+<!-- to do -->
+<!--미디어쿼리 width 와 height 값 함께 적용하는 법 -->
+<!-- 클래스이름, 소스 이름 정리 -->
+<!-- 앱솔루트 말고 다른 방식으로 요소 정리 -->
+<!-- 미완성 부분 채워넣기 -->
