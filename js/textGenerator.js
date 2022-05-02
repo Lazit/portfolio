@@ -75,6 +75,7 @@ const phrases = [
   "I'm Web designer,",
   "Front-end developer,",
   "based in Korea",
+  "Still learning hot!",
   "Thank you for vitising.",
 ];
 

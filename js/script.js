@@ -24,9 +24,40 @@ $(".subject").hover(
 $(".about-me a").on("click", function () {
   $(".black-wrap").css("display", "flex");
   $(".black-wrap-in").css("display", "flex");
-  $(".black-wrap-in img").addClass("fade-in-top");
+  $(".en-resume").css("display", "none")
+  $(".ko-resume").css("display", "block")
+  $(".ko-resume").addClass("flip-in-ver-left");
 })
-$(".black-wrap-in span a").on("click", function () {
+
+
+$(".korean").on("click", function () {
+  $(".en-resume").css("display", "none")
+  $(".ko-resume").css("display", "block")
+  $(".ko-resume").removeClass("flip-out-ver-right");
+  $(".en-resume").removeClass("flip-in-ver-right");
+  $(".ko-resume").removeClass("flip-in-ver-left");
+  $(".ko-resume").addClass("flip-in-ver-left");
+  $(".en-resume").addClass("flip-out-ver-left");
+})
+$(".english").on("click", function () {
+  $(".en-resume").css("display", "block")
+  $(".ko-resume").css("display","none")
+  $(".ko-resume").removeClass("flip-in-ver-left");
+  $(".en-resume").removeClass("flip-out-ver-left");
+  $(".ko-resume").removeClass("flip-in-ver-left");
+  $(".ko-resume").addClass("flip-out-ver-right");
+  $(".en-resume").addClass("flip-in-ver-right");
+})
+
+$(".close-btn").on("click", function () {
+  $(".ko-resume").removeClass("flip-out-ver-right");
+  $(".ko-resume").removeClass("flip-out-ver-left");
+  $(".ko-resume").removeClass("flip-in-ver-right");
+  $(".ko-resume").removeClass("flip-in-ver-left");
+  $(".en-resume").removeClass("flip-out-ver-right");
+  $(".en-resume").removeClass("flip-out-ver-left");
+  $(".en-resume").removeClass("flip-in-ver-right");
+  $(".en-resume").removeClass("flip-in-ver-left");
   $(".black-wrap").css("display", "none");
   $(".black-wrap-in").css("display", "none");
 })

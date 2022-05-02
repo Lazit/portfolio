@@ -78,14 +78,33 @@ body {
   flex-direction: column;
 }
 .black-wrap-in img {
-  width: 20%;
-  display: block;
+  width: 35%;
 }
-.black-wrap-in span {
+.resume-top {
   color: white;
   font-size: 20px;
-  margin-bottom: 20px;
   font-weight: 300;
+  width: 35%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lang-choice{
+  display: inline;
+}
+.top-btn:hover{
+  text-decoration: underline;
+}
+.view-info{
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  padding: 0 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  justify-self: baseline;
+  align-self: end;
+  letter-spacing: -2px;
 }
 
 main {
