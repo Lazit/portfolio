@@ -63,10 +63,12 @@ $(".close-btn").on("click", function () {
 // item 1
 // item 1
 $(".item01").on("click", function () {
+  $(".trans-wrap").css("display", "block");
   $(".subject01").css("display", "block");
   $(".subject01").addClass("scale-in-ver-bottom");
   setTimeout(function () {
     $(".s_wrap").css("display", "flex");
+    $(".trans-wrap").css("display", "none");
   }, 1000);
   setTimeout(function () {
     $(".s1__grid--left").css("display", "block");
@@ -93,10 +95,12 @@ $(".item01").on("click", function () {
 // item 2
 // item 2
 $(".item02").on("click", function () {
+  $(".trans-wrap").css("display", "block");
   $(".subject02").css("display", "block");
   $(".subject02").addClass("scale-in-ver-bottom");
   setTimeout(function () {
     $(".s_wrap").css("display", "flex");
+    $(".trans-wrap").css("display", "none");
   }, 1000);
   setTimeout(function () {
     $(".s1__grid--left").css("display", "block");
@@ -124,10 +128,12 @@ $(".item02").on("click", function () {
 // item 3
 // item 3
 $(".item03").on("click", function () {
+  $(".trans-wrap").css("display", "block");
   $(".subject03").css("display", "block");
   $(".subject03").addClass("scale-in-ver-bottom");
   setTimeout(function () {
     $(".s_wrap").css("display", "flex");
+    $(".trans-wrap").css("display", "none");
   }, 1000);
   setTimeout(function () {
     $(".s1__grid--left").css("display", "block");
@@ -166,6 +172,7 @@ $(".item03").on("click", function () {
 // backtotop
 // backtotop
 $(".backToTop").on("click", function () {
+  $(".trans-wrap").css("display", "block");
   $(".s_wrap").addClass("fade-out");
   setTimeout(function () {
     $(".subject").removeClass("scale-in-ver-bottom");
@@ -194,6 +201,9 @@ $(".backToTop").on("click", function () {
     $(".left_cate a").removeClass("selected");
     $(".l_one a").addClass("selected");
   }, 1300);
+  setTimeout(function () {
+    $(".trans-wrap").css("display", "none");
+  }, 1400);
   return false;
 });
 
