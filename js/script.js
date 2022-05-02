@@ -19,35 +19,32 @@ $(".subject").hover(
   }
 );
 
-
-
 $(".about-me a").on("click", function () {
   $(".black-wrap").css("display", "flex");
   $(".black-wrap-in").css("display", "flex");
-  $(".en-resume").css("display", "none")
-  $(".ko-resume").css("display", "block")
+  $(".en-resume").css("display", "none");
+  $(".ko-resume").css("display", "block");
   $(".ko-resume").addClass("flip-in-ver-left");
-})
-
+});
 
 $(".korean").on("click", function () {
-  $(".en-resume").css("display", "none")
-  $(".ko-resume").css("display", "block")
+  $(".en-resume").css("display", "none");
+  $(".ko-resume").css("display", "block");
   $(".ko-resume").removeClass("flip-out-ver-right");
   $(".en-resume").removeClass("flip-in-ver-right");
   $(".ko-resume").removeClass("flip-in-ver-left");
   $(".ko-resume").addClass("flip-in-ver-left");
   $(".en-resume").addClass("flip-out-ver-left");
-})
+});
 $(".english").on("click", function () {
-  $(".en-resume").css("display", "block")
-  $(".ko-resume").css("display","none")
+  $(".en-resume").css("display", "block");
+  $(".ko-resume").css("display", "none");
   $(".ko-resume").removeClass("flip-in-ver-left");
   $(".en-resume").removeClass("flip-out-ver-left");
   $(".ko-resume").removeClass("flip-in-ver-left");
   $(".ko-resume").addClass("flip-out-ver-right");
   $(".en-resume").addClass("flip-in-ver-right");
-})
+});
 
 $(".close-btn").on("click", function () {
   $(".ko-resume").removeClass("flip-out-ver-right");
@@ -60,7 +57,7 @@ $(".close-btn").on("click", function () {
   $(".en-resume").removeClass("flip-in-ver-left");
   $(".black-wrap").css("display", "none");
   $(".black-wrap-in").css("display", "none");
-})
+});
 
 // item 1
 // item 1
@@ -158,16 +155,12 @@ $(".item03").on("click", function () {
 // item 4
 // item 4
 
-
 //view more 공사중!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // $(".viewmore").on("click", function () {
 //   $(".subject04").css("display", "block");
 //   $(".subject04").addClass("scale-in-ver-bottom");
 //   return false;
 // });
-
-
-
 
 // backtotop
 // backtotop
@@ -213,7 +206,6 @@ $(".left_cate a").on("click", function () {
 
 // side menu add section
 
-
 $(".l_one a").on("click", function () {
   $(".s1_menu").removeClass("show");
   $(".s1_m1").addClass("show");
@@ -249,10 +241,6 @@ $(".l_seven a").on("click", function () {
   $(".s1_m7").addClass("show");
   return false;
 });
-
-
-
-
 
 $(".viewmore").hover(
   function () {

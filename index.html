@@ -9,7 +9,6 @@
    <link rel="icon" href="src/icon/4.png">
    <title>site.01</title>
    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-
    <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/animation.css">
    <link rel="stylesheet" href="css/customCursor.css">
@@ -36,7 +35,7 @@
       <!-- <div class="noise_cover"></div> -->
       <main>
          <header class="header">
-            <h1>site.01<span class="version">v1.0.6</span></h1>
+            <h1>site.01</h1>
             <div class="submenu">
                <span class="about-me"><a href="javascript:return false;">About Me</a></span>
             </div>
@@ -287,34 +286,26 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/customCursor.js"></script>
 <script src="js/script.js"></script>
-<!-- <script type="text/javascript">
-
-   var _gaq = _gaq || [];
-   _gaq.push(['_setAccount', 'UA-36251023-1']);
-   _gaq.push(['_setDomainName', 'jqueryscript.net']);
-   _gaq.push(['_trackPageview']);
-
-   (function () {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-   })();
-
-</script>
 <script>
-   try {
-      fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
-         return true;
-      }).catch(function (e) {
-         var carbonScript = document.createElement("script");
-         carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
-         carbonScript.id = "_carbonads_js";
-         document.getElementById("carbon-block").appendChild(carbonScript);
-      });
-   } catch (error) {
-      console.log(error);
-   }
-</script> -->
+   var images = [];
+      function preload() {
+         for (var i = 0; i < arguments.length; i++) {
+            images[i] = new Image();
+            images[i].src = preload.arguments[i];
+         }
+      }
+
+      //-- usage --//
+      preload(
+         "src/img/canal-sheet.png",
+         "src/img/Tolv.png",
+         "src/img/Won-Hundred.png",
+         "src/img/Donica.png",
+         "src/img/resume-en.png",
+         "src/img/resume-ko.png",
+         "carrot-horz",
+      )
+</script>
 
 </html>
 
