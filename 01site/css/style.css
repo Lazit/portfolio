@@ -32,6 +32,9 @@ body {
   opacity: 0.08;
   pointer-events: none;
 } */
+.version{
+  font-size: 12px;
+}
 /* ---------------------------------------- */
 /* default end */
 /* ---------------------------------------- */
@@ -331,6 +334,11 @@ main {
 .grid__right--imagewrap {
   width: 500px;
   height: 500px;
+}
+/* alt-carrot! */
+.alt-carrot{
+  width: 1400px;
+  height: 800px;
 }
 .grid__right--imagewrap img {
   width: 100%;

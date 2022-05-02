@@ -172,6 +172,9 @@ $(".left_cate a").on("click", function () {
   return false;
 });
 
+// side menu add section
+
+
 $(".l_one a").on("click", function () {
   $(".s1_menu").removeClass("show");
   $(".s1_m1").addClass("show");
@@ -182,10 +185,29 @@ $(".l_two a").on("click", function () {
   $(".s1_m2").addClass("show");
   return false;
 });
-
 $(".l_three a").on("click", function () {
   $(".s1_menu").removeClass("show");
   $(".s1_m3").addClass("show");
+  return false;
+});
+$(".l_four a").on("click", function () {
+  $(".s1_menu").removeClass("show");
+  $(".s1_m4").addClass("show");
+  return false;
+});
+$(".l_five a").on("click", function () {
+  $(".s1_menu").removeClass("show");
+  $(".s1_m5").addClass("show");
+  return false;
+});
+$(".l_six a").on("click", function () {
+  $(".s1_menu").removeClass("show");
+  $(".s1_m6").addClass("show");
+  return false;
+});
+$(".l_seven a").on("click", function () {
+  $(".s1_menu").removeClass("show");
+  $(".s1_m7").addClass("show");
   return false;
 });
 
