@@ -41,7 +41,7 @@
                <span class="about-me"><a href="javascript:return false;">About Me</a></span>
             </div>
          </header>
-         <div class="grid--outer">
+         <div class="main--center">
             <div class="container">
                <div class="text-gen"></div>
             </div>
@@ -283,26 +283,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/customCursor.js"></script>
 <script src="js/script.js"></script>
-<script>
-   var images = [];
-      function preload() {
-         for (var i = 0; i < arguments.length; i++) {
-            images[i] = new Image();
-            images[i].src = preload.arguments[i];
-         }
-      }
-
-      //-- usage --//
-      preload(
-         "src/img/canal-sheet.png",
-         "src/img/Tolv.png",
-         "src/img/Won-Hundred.png",
-         "src/img/Donica.png",
-         "src/img/resume-en.png",
-         "src/img/resume-ko.png",
-         "carrot-horz",
-      )
-</script>
+<script src="js/preloadImage.js"></script>
 
 </html>
 

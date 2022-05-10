@@ -4,11 +4,13 @@
 @import "textGenerator.css";
 @import "font.css";
 
+
 html,
 body {
   display: block;
   font-family: "Roboto Mono", monospace;
   font-weight: 100;
+  font-size: 62.5%;
   background: #222222;
   /* height: 100vh; */
   min-height: 100vh;
@@ -46,7 +48,7 @@ body {
 }
 .progress{
   display: none;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 500;
   font-family: "Playfair Display",
   serif;
@@ -129,26 +131,27 @@ body {
 main {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  width: 100%;
   min-height: 100vh;
+  /* background-color: wheat; */
 }
 
 .header {
-  position: absolute;
+  /* position: absolute;
   left: 0;
-  top: 0;
+  top: 0; */
   display: flex;
   /* flex-direction: row; */
   align-items: center;
   justify-content: space-between;
-  /* background-color: gray; */
+  /* background-color: red; */
   width: 100%;
-  height: 85px;
+  height: 8vh;
   box-sizing: border-box;
-  padding: 24px;
+  padding: 0px 24px;
   color: beige;
-  z-index: 2;
+  /* z-index: 2; */
   font-weight: 300;
   border-bottom: 1px solid beige;
   font-size: 20px;
@@ -157,47 +160,51 @@ main {
 .submenu span {
   margin-left: 80px;
 }
-.grid--outer {
-  position: absolute;
+
+.main--center {
+  /* position: absolute;
   top: 0;
-  left: 0;
-  height: 80vh;
+  left: 0; */
+  height: 72vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  padding-top: 60px;
-  /* background-color: red; */
-  background-color: #222222;
+  /* background-color: blue; */
+  /* background-color: #222222; */
   border-bottom: 1px solid beige;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .grid {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
   width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  /* display: grid;
+  height: 20vh;
+  display: grid;
   grid-template-columns: 16vw 16vw 16vw 16vw 16vw;
-  grid-column-gap: 5vw; */
+  grid-column-gap: 5vw;
   overflow: hidden;
+  border-bottom: 1px solid beige;
+  /* background-color: yellowgreen; */
 }
 .grid__item {
   width: 16vw;
+  height: auto;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 15px;
   text-align: center;
   /* background-color: red; */
   border-left: 1px solid beige;
   border-right: 1px solid beige;
   color: beige;
+
   /* transition: 0.2s; */
 }
 
@@ -219,32 +226,35 @@ main {
 
 .grid__item:last-child {
   justify-content: right;
-  text-align: right;
+  text-align:right;
+  padding-right: 24px;
   box-sizing: border-box;
   border: 0;
   border-left: 1px solid beige;
 }
-.grid__item:last-child a {
-  /* display: flex; */
+/* .grid__item:last-child a {
+  display: flex;
   justify-content: right;
   padding-right: 24px;
 }
-/* .grid__item:last-child a {
+.grid__item:last-child a {
   padding-right: 24px;
-} */
-/* .grid__item a:last-child .item--title {
+}
+.grid__item a:last-child .item--title {
   font-size: 60px;
   font-weight: 100;
 } */
-.grid__item a {
+/* .grid__item a {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-}
+} */
+
 .grid__item--inner {
-  position: absolute;
-  bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .item--imagewrap img {
   width: 100%;
@@ -253,9 +263,8 @@ main {
 }
 .item--title {
   font-family: "Playfair Display", serif;
-  font-size: 60px;
+  font-size: 3.5vw;
   font-weight: 100;
-  margin-top: 10px;
 }
 .item--number {
   font-size: 30px;
@@ -362,7 +371,7 @@ main {
   height: auto;
   /* margin-left: 100px;
   margin-right: 100px; */
-  font-size: 20px;
+  font-size: 1.2vw;
   font-weight: 400;
   line-height: 50px;
   margin-right: 80px;
@@ -442,3 +451,25 @@ main {
 /* ---------------------------------------- */
 /* subject 01 animation end */
 /* ---------------------------------------- */
+/* PC (해상도 1280px)*/
+@media all and (min-width:1280px) {
+
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1279px) {
+  
+
+
+
+}
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+  
+
+
+
+}
+
+

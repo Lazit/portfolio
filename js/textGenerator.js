@@ -5,8 +5,7 @@ class TextScramble {
   constructor(el) {
     this.el = el;
     // this.chars = "!<>-_\\/[]{}—=+123456789*;^?()#________";
-    this.chars =
-      "abcdefghijklmnopqrstuvwxyz!<>-_/[]{}—=+123456789*^?#_=+^&";
+    this.chars = "abcdefghijklmnopqrstuvwxyz!<>-_/[]{}—=+1234567890*^?#_=+^&";
     this.update = this.update.bind(this);
   }
   setText(newText) {
@@ -85,7 +84,7 @@ const fx = new TextScramble(el);
 let counter = 0;
 const next = () => {
   fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 1500);
+    setTimeout(next, 1700);
   });
   counter = (counter + 1) % phrases.length;
   // if (counter == 6) {
